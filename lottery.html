@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<title></title>
+<link href="css/css.css" type="text/css" rel="stylesheet">
+<head>
+<script type="text/javascript" src="js/lottery.js"></script>
+<script type="text/javascript">
+</script>
+</head>
+<body>
+  <div id="container">
+    <div id="userlist">
+      <div id="importlist" class="button">
+        导入名单
+      </div>
+      <ol id="ollist">
+      </ol>
+    </div>
+    <div id="lottery">
+      <div id="lo1">
+      </div>
+      <div id="lo2">
+      </div>
+    </div>
+    <div id="control">
+      <button id="start" class="button control">开始</button>
+      <button id="stop" class="button control">停止</button>
+      <button id="continue" class="button control">继续</button>
+    </div>
+    <div id="winner">
+      <ol id="olwinner">
+      </ol>
+    </div>
+  </div>
+  <div id="layer" hidden>
+    <label>将要抽取的名单粘贴到下面文本框，多个名单以英文逗号“,”分割。例如：张无忌,刘德华</label>
+    </br>
+    <textarea id="textarea"></textarea>
+    <br/>
+    <button id="saveuser" class="button control">保存</button>
+  </div>
+</body>
+</html>

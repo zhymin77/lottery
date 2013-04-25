@@ -1,0 +1,239 @@
+body{
+  background: url(../images/bg.png) no-repeat;
+  background-size: 100%;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -ms-background-size: 100%;
+  -o-background-size: 100%;
+}
+#container {
+  width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 50px;
+  overflow: hidden;
+}
+.button {
+  border-bottom: solid 1px;
+  margin-top: 2px;
+  height: 28px;
+  text-align: center;
+  padding-top: 10px;
+  border-radius: 10px;
+  background-image: -ms-radial-gradient(center, ellipse closest-side, #FFFFFF 0%, #EDEDED 100%);
+  background-image: -moz-radial-gradient(center, ellipse closest-side, #FFFFFF 0%, #EDEDED 100%);
+  background-image: -o-radial-gradient(center, ellipse closest-side, #FFFFFF 0%, #EDEDED 100%);
+  background-image: -webkit-gradient(radial, center center, 0, center center, 140, color-stop(0, #FFFFFF), color-stop(1, #EDEDED));
+  background-image: -webkit-radial-gradient(center, ellipse closest-side, #FFFFFF 0%, #EDEDED 100%);
+  background-image: radial-gradient(ellipse closest-side at center, #FFFFFF 0%, #EDEDED 100%);
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.2), inset 0 -5px 0 0 rgba(0,0,0,0.3), inset 0 2px 0 0 rgba(255,255,255,0.5);
+}
+.button:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+.button:active {
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.2), inset 0 -2px 0 0 rgba(0,0,0,0.3), inset 0 2px 0 0 rgba(255,255,255,0.5);
+  margin-top: 5px;
+}
+#userlist {
+  border: solid 1px;
+  float: left;
+  width: 110px;
+  height: 455px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+#lottery {
+  padding: 0 30px 0 30px;
+  float: left;
+  margin-top: 50px;
+  overflow: hidden;
+  width: 620px;
+  height: 260px;
+  text-align: center;
+}
+#control {
+  position: absolute;
+  text-align: center;
+  width: 930px;
+  top: 420px;
+}
+.control {
+  width: 100px;
+  height: 38px;
+  margin-left: 10px;
+  padding-top: 5px;
+  font-size: 16px;
+  border: 0px;
+}
+.sliding {
+  background: url(../images/img-cardName.png) no-repeat;
+  line-height: 180px;
+  padding-left: 70px;
+  height: 200px;
+  width: 230px;
+  background-size: 100%;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -ms-background-size: 100%;
+  -o-background-size: 100%;
+  color: white;
+  font-size: 60px;
+  font-weight: bold;
+  animation: slide 0.5s infinite linear;
+  -webkit-animation: slide 0.5s infinite linear;
+  -moz-animation: slide 0.5s infinite linear;
+  -ms-animation: slide 0.5s infinite linear;
+  -o-animation: slide 0.5s infinite linear;
+}
+@keyframes slide {
+  from { top: 30px; }
+  to { top: -30px; }
+}
+@-webkit-keyframes slide {
+  from { margin-top: -200px; }
+  to { margin-top: 300px; }
+}
+@-moz-keyframes slide {
+  from { margin-top: -200px; }
+  to { margin-top: 300px; }
+}
+@-ms-keyframes slide {
+  from { margin-top: -200px; }
+  to { margin-top: 300px; }
+}
+@-o-keyframes slide {
+  from { margin-top: -200px; }
+  to { margin-top: 300px; }
+}
+#lottery .item {
+  background: url(../images/img-cardName.png) no-repeat;
+  line-height: 180px;
+  padding-left: 70px;
+  height: 200px;
+  width: 230px;
+  background-size: 100%;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -ms-background-size: 100%;
+  -o-background-size: 100%;
+  color: white;
+  font-size: 60px;
+  font-weight: bold;
+  animation: towinner 1s 1s;
+  -webkit-animation: towinner 1s 1s;
+  -moz-animation: towinner 1s 1s;
+  -ms-animation: towinner 1s 1s;
+  -o-animation: towinner 1s 1s;
+}
+@keyframes towinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(720deg);
+  }
+}
+@-webkit-keyframes towinner {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(720deg);
+  }
+}
+@-moz-keyframes towinner {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(720deg);
+  }
+}
+@-ms-keyframes towinner {
+  from {
+    -ms-transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(720deg);
+  }
+}
+@-o-keyframes towinner {
+  from {
+    -o-transform: rotate(0deg);
+  }
+  to {
+    -o-transform: rotate(720deg);
+  }
+}
+#lo1 {
+  float: left;
+}
+#lo2 {
+  float: right;
+}
+#winner {
+  float: right;
+  width: 118px;
+  height: 350px;
+  padding: 70px 45px 45px 45px;
+  line-height: 30px;
+  background: url(../images/bg-lotteryStorage.png) no-repeat;
+}
+.winnerShow {
+  animation: winnerShow 3s alternate;
+  -webkit-animation: winnerShow 3s alternate;
+  -moz-animation: winnerShow 3s alternate;
+  -ms-animation: winnerShow 3s alternate;
+  -o-animation: winnerShow 3s alternate;
+}
+@keyframes winnerShow {
+  0% { color: black; margin-left: 0; transform: scale(1, 1); }
+  50% { color: green; margin-left: 22px; transform: scale(2, 2); }
+  100% { color: black; margin-left: 0; transform: scale(1, 1); }
+}
+@-webkit-keyframes winnerShow {
+  0% { color: black; margin-left: 0; -webkit-transform: scale(1, 1); }
+  50% { color: green; margin-left: 22px; -webkit-transform: scale(2, 2); }
+  100% { color: black; margin-left: 0; -webkit-transform: scale(1, 1); }
+}
+@-moz-keyframes winnerShow {
+  0% { color: black; margin-left: 0; -moz-transform: scale(1, 1); }
+  50% { color: green; margin-left: 22px; -moz-transform: scale(2, 2); }
+  100% { color: black; margin-left: 0; -moz-transform: scale(1, 1); }
+}
+@-ms-keyframes winnerShow {
+  0% { color: black; margin-left: 0; -ms-transform: scale(1, 1); }
+  50% { color: green; margin-left: 22px; -ms-transform: scale(2, 2); }
+  100% { color: black; margin-left: 0; -ms-transform: scale(1, 1); }
+}
+@-o-keyframes winnerShow {
+  0% { color: black; margin-left: 0; -o-transform: scale(1, 1); }
+  50% { color: green; margin-left: 22px; -o-transform: scale(2, 2); }
+  100% { color: black; margin-left: 0; -o-transform: scale(1, 1); }
+}
+#layer {
+  position: absolute;
+  top: 0;
+  margin-left: -8px;
+  background-color: #2E3436;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+}
+#layer {
+  text-align: center;
+  padding-top: 100px;
+}
+#layer label {
+  color: white;
+}
+#textarea {
+  width: 500px;
+  height: 100px;
+  margin-top: 20px;
+}
