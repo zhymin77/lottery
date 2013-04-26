@@ -1,26 +1,27 @@
 window.onload = function() {
   lottery.initListens();
-  document.getElementById('importlist').addEventListener('click', function() {
+  document.getElementById('importlist').addEventListener('mousedown', function() {
     document.getElementById('layer').style.display = 'block';
   });
 };
 var Lottery = Lottery || function() {};
 Lottery.prototype.initListens = function() {
-  document.getElementById('start').addEventListener('click', function() {
+  document.getElementById('start').addEventListener('mousedown', function() {
     document.getElementById('olwinner').innerHTML = '';
     lottery.clearInterval();
     lottery.initData(lottery.data);
     lottery.start();
   });
-  document.getElementById('stop').addEventListener('click', function() {
+  document.getElementById('stop').addEventListener('mousedown', function() {
     lottery.stop();
   });
-  document.getElementById('continue').addEventListener('click', function() {
+  document.getElementById('continue').addEventListener('mousedown', function() {
     lottery.clearInterval();
     lottery.start();
   });
-  document.getElementById('saveuser').addEventListener('click', function() {
+  document.getElementById('saveuser').addEventListener('mousedown', function() {
     var data = document.getElementById('textarea').value.trim();
+    data = data.replace(new RegExp("，","gm"),",");
     lottery.initData(data);
     document.getElementById('layer').style.display = 'none';
   });
