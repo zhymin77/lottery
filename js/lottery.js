@@ -63,7 +63,7 @@ Lottery.prototype.slide = function(loC) {
       div.className = 'sliding';
       loC.appendChild(div);
     }
-  }, 100));
+  }, 200));
 };
 Lottery.prototype.clearInterval = function() {
   if (this.nonEmpty(this.intervalA) && this.intervalA.length>0) {
