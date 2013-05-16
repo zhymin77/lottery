@@ -84,11 +84,11 @@ body{
   color: white;
   font-size: 60px;
   font-weight: bold;
-  animation: slide 0.5s infinite linear;
-  -webkit-animation: slide 0.5s infinite linear;
-  -moz-animation: slide 0.5s infinite linear;
-  -ms-animation: slide 0.5s infinite linear;
-  -o-animation: slide 0.5s infinite linear;
+  animation: slide 0.2s infinite linear;
+  -webkit-animation: slide 0.2s infinite linear;
+  -moz-animation: slide 0.2s infinite linear;
+  -ms-animation: slide 0.2s infinite linear;
+  -o-animation: slide 0.2s infinite linear;
 }
 @keyframes slide {
   from { top: 30px; }
@@ -171,7 +171,7 @@ body{
   }
 }
 #lo1 {
-  float: left;
+  margin-left: 180px;
 }
 #lo2 {
   float: right;
