@@ -56,11 +56,99 @@ body{
   height: 260px;
   text-align: center;
 }
+.hiddenlotteryend {
+  position: absolute;
+  margin-left: 284px;
+ transform: rotate(2deg);
+ -webkit-transform: rotate(2deg);
+ -moz-transform: rotate(2deg);
+ -ms-transform: rotate(2deg);
+ -o-transform: rotate(2deg);
+ animation: hidelotteryend 1s;
+ animation-fill-mode: forwards;
+ -webkit-animation: hidelotteryend 1s ease-in;
+ -webkit-animation-fill-mode: forwards;
+ -moz-animation: hidelotteryend 1s ease-in;
+ -moz-animation-fill-mode: forwards;
+ -ms-animation: hidelotteryend 1s ease-in;
+ -ms-animation-fill-mode: forwards;
+ -o-animation: hidelotteryend 1s ease-in;
+ -o-animation-fill-mode: forwards;
+}
+@keyframes hidelotteryend
+{
+  from { top: 120px; }
+  to { top: -370px; }
+}
+@-webkit-keyframes hidelotteryend
+{
+  from { top: 120px; }
+  to { top: -370px; }
+}
+@-moz-keyframes hidelotteryend
+{
+  from { top: 120px; }
+  to { top: -370px; }
+}
+@-ms-keyframes hidelotteryend
+{
+  from { top: 120px; }
+  to { top: -370px; }
+}
+@-o-keyframes hidelotteryend
+{
+  from { top: 120px; }
+  to { top: -370px; }
+}
+.hiddenlotterystart {
+  position: absolute;
+  margin-left: 284px;
+ transform: rotate(2deg);
+ -webkit-transform: rotate(2deg);
+ -moz-transform: rotate(2deg);
+ -ms-transform: rotate(2deg);
+ -o-transform: rotate(2deg);
+ animation: hidelotterystart 1s;
+ -webkit-animation: hidelotterystart 1s;
+ -moz-animation: hidelotterystart 1s;
+ -ms-animation: hidelotterystart 1s;
+ -o-animation: hidelotterystart 1s;
+}
+@keyframes hidelotterystart
+{
+  0% { transform: scale(1.7, 1.7) rotate(2deg); }
+  70% { transform: scale(1.7, 1.7) rotate(2deg); }
+  100% { transform: scale(1, 1) rotate(2deg); }
+}
+@-webkit-keyframes hidelotterystart
+{
+  0% { -webkit-transform: scale(1.7, 1.7) rotate(2deg); }
+  70% { -webkit-transform: scale(1.7, 1.7) rotate(2deg); }
+  100% { -webkit-transform: scale(1, 1) rotate(2deg); }
+}
+@-moz-keyframes hidelotterystart
+{
+  0% { -moz-transform: scale(1.7, 1.7) rotate(2deg); }
+  70% { -moz-transform: scale(1.7, 1.7) rotate(2deg); }
+  100% { -moz-transform: scale(1, 1) rotate(2deg); }
+}
+@-ms-keyframes hidelotterystart
+{
+  0% { -ms-transform: scale(1.7, 1.7) rotate(2deg); }
+  70% { -ms-transform: scale(1.7, 1.7) rotate(2deg); }
+  100% { -ms-transform: scale(1, 1) rotate(2deg); }
+}
+@-o-keyframes hidelotterystart
+{
+  0% { -o-transform: scale(1.7, 1.7) rotate(2deg); }
+  70% { -o-transform: scale(1.7, 1.7) rotate(2deg); }
+  100% { -o-transform: scale(1, 1) rotate(2deg); }
+}
 #control {
   position: absolute;
   text-align: center;
   width: 930px;
-  top: 460px;
+  top: 500px;
 }
 .control {
   width: 100px;

@@ -50,6 +50,7 @@ Lottery.prototype.start = function() {
 };
 Lottery.prototype.slide = function(loC) {
   var This = this;
+  this.hideLottery();
   this.intervalA.push(window.setInterval(function(){
     loC.innerHTML = '';
     var u = '';
@@ -65,6 +66,15 @@ Lottery.prototype.slide = function(loC) {
     }
   }, 200));
 };
+Lottery.prototype.showLottery = function() {
+  var n = document.getElementById('hidelottery');
+  n.className = 'hiddenlotteryend';
+};
+Lottery.prototype.hideLottery = function() {
+  var n = document.getElementById('hidelottery');
+  n.style.display = 'block';
+  n.className = 'hiddenlotterystart';
+};
 Lottery.prototype.clearInterval = function() {
   if (this.nonEmpty(this.intervalA) && this.intervalA.length>0) {
     for(var i=0; i<this.intervalA.length; i++) {
@@ -73,6 +83,7 @@ Lottery.prototype.clearInterval = function() {
   }
 };
 Lottery.prototype.stop = function() {
+  this.showLottery();
   this.clearInterval();
   var lo1 = document.getElementById('lo1').childNodes.item(0);
   if (this.nonEmpty(lo1)) {
